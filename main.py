@@ -20,12 +20,12 @@ def main():
     logger_path = arguments.log
     time_period = int(arguments.time)
 
-    if not os.path.exists(source_path):
-        log("Source folder does not exist.",logger_path)
+    if not os.path.exists(destination_path):
+        log("Destination folder does not exist.", logger_path, is_error=True)
         sys.exit(1)
 
-    if not os.path.exists(destination_path):
-        log("Destination folder does not exist.",logger_path)
+    if not os.path.exists(source_path):
+        log("Source folder does not exist.", logger_path, is_error=True)
         sys.exit(1)
 
     try:

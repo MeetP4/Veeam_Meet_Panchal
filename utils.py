@@ -4,10 +4,13 @@ import stat
 
 
 # Function to log messages in the desired log file.
-def log(message, logger_path):
+def log(message, logger_path, is_error=False):
     timestamp = datetime.datetime.now()
     print(f"{message}")
-    log_message = f"{timestamp}: {message}"
+    if not is_error:
+        log_message = f"INFO: {timestamp}: {message}"
+    else:
+        log_message = f"ERROR: {timestamp}: {message}"
     
     with open(logger_path, "a") as log:
         log.write(log_message + '\n')
