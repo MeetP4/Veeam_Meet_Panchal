@@ -1,4 +1,6 @@
 # ONE WAY SYNCHRONIZATION
+This program facilitates an one-way synchronization between two folders within a system, termed as the 'source' and 'destination' folders. Its primary function is to ensure that any changes made in the source folder are accurately reflected in the destination folder on a periodic basis. 
+
 Solution for Veeam QA Test in Python. <br />
 Author: Meet Rajkumar Panchal
 
