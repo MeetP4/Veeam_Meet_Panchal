@@ -16,7 +16,7 @@ py main.py --source SOURCE_PATH  --destination DESTINATION_PATH --log LOG_PATH -
 * LOG_PATH: path of the log file in your system.
 * SYNC_PERIOD: time period in seconds, after which the program would run the synchronization procedure again.
 
-In order to abort the procedure, Keyboard Interrupt should be enough.
+In order to abort the process, Keyboard Interrupt is required.
 
 # Python Libraries Required:
 * os
